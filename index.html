@@ -1,263 +1,218 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isabel Cristina</title>
-    <link rel="icon" type="image/png" href="imagens/visualization.png">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Isabel Cristina — estudante de Ciência da Computação, desenvolvimento de software, análise de dados e tecnologia assistiva.">
+  <meta name="theme-color" content="#0b0a12">
+  <title>Isabel Cristina | Portfólio</title>
+  <link rel="icon" type="image/png" href="imagens/visualization.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-   
-    <nav>
-        <div class="container nav_container">
-            <a href="index.html">
-                <h4><span>Isabel </span>Cristina</h4>
-            </a>
-            <ul class="nav_menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#service">Trabalhos</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#courses">Cursos</a></li>
-                <li><a href="#contact">Contatos</a></li>
-            </ul>
-            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
-            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
-        </div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Isabel Cristina — início">isabel<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a class="nav-contact" href="#contato">Contato <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
+      </ul>
     </nav>
-   
-    <header>
-        <div class="container header_container" id="home">
-            <div class="header_left">
-                <div class="header_left_img">
-                    <img src="imagens/HZHR9663.JPG" alt="Model Image">
-                </div>
-            </div>
-            <div class="header_right">
-                <div class="text-1">Olá, meu nome é</div>
-                <div class="text-2">Isabel Cristina</div>
-                <div class="text-3">E sou <span class="typing"></span></div>
-                <a  href="https://wa.me/5531986802766" target="_blank" class="btn">Fale comigo</a>
-            </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-glow glow-one" aria-hidden="true"></div>
+      <div class="hero-glow glow-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> PORTFÓLIO • 2026</p>
+          <p class="hero-greeting">Olá, eu sou</p>
+          <h1>Isabel <span>Cristina</span></h1>
+          <h2>Estudante de Ciência da Computação<br><span class="role-line">com interesse em <span class="typing" aria-live="polite">desenvolvimento de software</span><span class="cursor" aria-hidden="true">|</span></span></h2>
+          <p class="hero-description">Gosto de transformar ideias e problemas reais em soluções com tecnologia. Tenho interesse em desenvolvimento, análise de dados e acessibilidade digital.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Ver projetos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a class="button button-secondary" href="#contato">Vamos conversar</a>
+          </div>
+          <div class="social-links" aria-label="Redes profissionais">
+            <a href="https://github.com/Isa-Cris24" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/isabel-cristina-12018b15b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:Isabelcris.dev@gmail.com" aria-label="E-mail"><i class="fa-regular fa-envelope"></i></a>
+          </div>
         </div>
-    </header>
-    
-    <section class="about" id="about">
-        <h2 class="border_bottom">Sobre mim</h2>
-        <div class="container about_container">
-            <div class="about-img">
-                <img src="imagens/eu.jpg" alt="about model">
-            </div>
-            <div class="about-text">
-                <div class="text">
-                    Eu Isabel Cristina sou <span class="typing-2"></span>
-                </div>
-                <p>Sou estudante de Ciências da Computação na universidade Estácio de Sá. 
-                     Além disso tenho aguns cursos Profissionalizante em plataformas.
-                    Tenho conhecimentos em Python, R, SQL, Teblau, Power BI, etc...<br>
-                     Tecnologia é minha paixão. Procuro sempre partilhar o meu conhecimento e experiência e acredito que tenho muito a aprender
-                    nessa minha jornada que se inicia no mundo do TI.</p><br>
-                <p>Clique aqui</a> para download do meu currículo.
-            <!--Mudar link acima com o link do meu CV-->
-            </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <div class="portrait-orbit orbit-a" aria-hidden="true"></div>
+            <div class="portrait-orbit orbit-b" aria-hidden="true"></div>
+            <img src="imagens/HZHR9663.JPG" alt="Retrato de Isabel Cristina" class="hero-photo">
+            <div class="floating-card"><span class="floating-icon"><i class="fa-solid fa-code"></i></span><span><strong>Aprender</strong><small>Construir • Evoluir</small></span></div>
+          </div>
+          <span class="visual-caption">Curiosidade que vira conhecimento.</span>
         </div>
+      </div>
+      <a class="scroll-cue" href="#sobre"><span></span> Role para explorar</a>
     </section>
- 
-    <div class="services" id="service">
-        <h2 class="border_bottom">Meus trabalhos</h2>
-        <div class="container services_container">
-            <div class="cards">
-                <div class="card">
-                    <div class="sbox">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Backend Development</h3>
-                        <p>Desenvolvedor back-end é responsável pelo lado do servidor no 
-                            desenvolvimento web. Sua tarefa é planejar, programar, testar e manter a estrutura
-                             de códigos que faz a interface de um site com o servidor e o banco de dados.</p>
-                        <!-- <a href="#">Saber mais</a> -->
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="sbox">
-                        <i class="fa-solid fa-file-code"></i>
-                        <h3>Frontend Development</h3>
-                        <p>Desenvolvedor front-end é o responsável por colocar em prática,
-                             através de códigos, o design de um site ou interface. O desenvolvimento front-end implementa esse design 
-                             através de códigos, como HTML, CSS e JavaScript.</p>
-                        <!-- <a href="#">Saber mais</a> -->
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="sbox">
-                        <i class="fa-solid fa-laptop-code"></i>
-                        <h3>Analista de Dados</h3>
-                        <p>Profissional com experiência em análise de dados. Meu trabalho envolve a otimização do desempenho, a implementação de soluções de 
-                            backup e recuperação, e a garantia da segurança e integridade dos dados. Tenho habilidades em SQL, modelagem de dados, e ferramentas de ETL, 
-                            além de uma forte capacidade de resolver problemas complexos e de trabalhar em colaboração com equipes multidisciplinares para alcançar os objetivos de negócios.</p>
-                        <!-- <a href="#">Saber mais</a> -->
-                    </div>
-                </div>
-            </div>
+
+    <section class="section container" id="sobre">
+      <div class="section-heading">
+        <p class="eyebrow">UM POUCO SOBRE MIM</p>
+        <h2>Conectando <span>tecnologia</span>, conhecimento e pessoas.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <img src="imagens/eu.jpg" alt="Isabel Cristina" class="about-photo" loading="lazy">
+          <span class="photo-decoration" aria-hidden="true"></span>
         </div>
-    </div>
-  
-    <div class="skills" id="skills">
-        <div class="new">
-            <h2 class="border_bottom">Minhas principais habilidades</h2>
+        <div class="about-copy">
+          <p>Sou estudante de <strong>Ciência da Computação na Estácio de Sá</strong> e estou construindo minha trajetória na área de tecnologia. Tenho interesse em desenvolvimento de software, análise de dados e soluções que facilitem o dia a dia das pessoas.</p>
+          <p>Minha experiência profissional também me aproximou da educação e da acessibilidade: trabalho com adaptação de materiais didáticos de Matemática para o sistema Braille. Essa vivência ampliou meu olhar para a importância de criar conteúdos e ferramentas mais inclusivos.</p>
+          <p>Gosto de aprender na prática, investigar problemas e transformar conhecimento em soluções úteis. Estou em constante desenvolvimento e busco oportunidades para crescer profissionalmente na tecnologia.</p>
+          <div class="about-highlights">
+            <div><i class="fa-solid fa-laptop-code"></i><span>Desenvolvimento</span></div>
+            <div><i class="fa-solid fa-chart-column"></i><span>Análise de dados</span></div>
+            <div><i class="fa-solid fa-universal-access"></i><span>Acessibilidade</span></div>
+          </div>
         </div>
-        <div class="container skills_container">
-            <div class="bar">
-                <div class="info">
-                    <span>HTML</span>
-                </div>
-                <div class="progress-line html">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>CSS</span>
-                </div>
-                <div class="progress-line css">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>SQL</span>
-                </div>
-                <div class="progress-line jquery">
-                    <span></span>
-                </div>
-                <div class="bar">
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line postgresql">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-            </div>
-            
+      </div>
+    </section>
 
+    <section class="section section-muted" id="trajetoria">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CAMINHO PROFISSIONAL</p>
+          <h2>Experiências que <span>me trouxeram até aqui</span></h2>
+          <p class="section-intro">Minha trajetória combina educação, organização de processos e tecnologia assistiva.</p>
         </div>
-    </div>
-  
-    <div class="container portfolio_container" id="portfolio">
-        <h2 class="border_bottom">Meu Portofolio</h2>
-    </div>
-
-        <h3>Barber Shop app agendamento</h3>
-        <p>Status do projeto : MVP(Mínimo Produto Viável) concluido ✅ Porém ainda estou trabalhando nele.</p>
-        <p>Mais informações sobre o projeto quais linguagens e metodos foram utilizado
-            acessa meu linkedin ou entre em contato comigo.
-        </p>
-        <div class="gallery">
-            <video 
-            controls
-            width="300"
-            height=""
-           >
-             <source src="image/appKotlin.mp4" >
-             <source src="image/appKotlin.mkv" >
-             <source src="image/appKotlin.mov" >
-           </video>
-        </div>
-    </div>
-   
-    <div class="courses" id="courses">
-        <h2 class="border_bottom">
-            Meus cursos populares
-        </h2>
-        <div class="container courses_container">
-            <article class="course">
-                <div class="course_image">
-                    <img src="imagens/postgresql.png" alt="Course 1">
-                </div>
-                <div class="course_info">
-                    <h4>PostgreSql</h4>
-                    <p>Lançado em 1996, o PostgreSQL é um SGBD de código livre mantido pela "PostgreSQL Global Development Group".
-Por ser de código aberto e totalmente gratuito, o PostgreSQL é muito usado em empresas pelo mundo todo.
-Recomenda-se a todos que desejam investir na criação de pequenos até grande sistemas que se usem e apliquem o banco de dados PostgreSQL.</p>
-                    <!-- Tenho que atualizar de acordo com meus cursos-->
-                </div>
-            </article>
-
-            <article class="course">
-                <div class="course_image">
-                    <img src="imagens/estacio.png" alt="Course 2">
-                </div>
-                <div class="course_info">
-                    <h4>Ciência da Computação</h4>
-                    <p>O curso de Ciência da Computação é uma graduação que forma profissionais capazes de desenvolver soluções tecnológicas para as mais diversas áreas. Os estudantes aprendem a projetar e implementar sistemas computacionais.</p>
-                    <!-- Tenho que atualizar de acordo com meus cursos-->
-                </div>
-            </article>
-
-        </div>
-    </div> 
-   
-    <footer>
-        <div class="container footer_container">
-            <div class="footer_1">
-                <a href="index.html" class="footer_logo">
-                    <h4>Isabel</h4>
-                </a>
-                <p>Esse é meu portifolio! Sou Desenvolvedora de Software... Full Stack, 
-                    Fique a vontade para navegar e saber sobre meu curriculo.
-                    Adoro desafios e acredito na transformação do mundo com o poder da informação.</p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-marker"><i class="fa-solid fa-book-open"></i></span>
+            <div class="timeline-card">
+              <div class="timeline-meta"><span>02/2026 — atual</span><span class="tag">Atual</span></div>
+              <h3>Professora de Matemática — adaptação de materiais</h3>
+              <h4>Instituto / CAP São Rafael</h4>
+              <p>Adaptação e ampliação de materiais didáticos de Matemática e Ciências para pessoas que utilizam o sistema Braille, contribuindo para o acesso ao conteúdo educacional.</p>
             </div>
-
-            <div class="footer_2">
-                <h4>Navegação</h4>
-                <ul class="permalinks">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#courses">Cursos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-marker"><i class="fa-solid fa-chalkboard-user"></i></span>
+            <div class="timeline-card">
+              <div class="timeline-meta"><span>03/2025 — 12/2025</span></div>
+              <h3>Professora de Matemática</h3>
+              <h4>Ensino Médio</h4>
+              <p>Atuação no ensino de Matemática para estudantes do Ensino Médio, com organização de conteúdos e apoio ao processo de aprendizagem.</p>
             </div>
-
-            <div class="footer_3">
-                <h4>Privacy</h4>
-                <ul class="privacy">
-                    <li><a href="#">Privacy & Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Refund Ploicy</a></li>
-                </ul>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-marker"><i class="fa-solid fa-calendar-check"></i></span>
+            <div class="timeline-card">
+              <div class="timeline-meta"><span>01/2023 — 02/2025</span></div>
+              <h3>Teledigifonista</h3>
+              <h4>MGS — Minas Gerais Administração e Serviços</h4>
+              <p>Atendimento e apoio administrativo. Elaboração e organização de mapas de férias de colaboradores alocados em órgãos do Governo de Minas Gerais.</p>
             </div>
-
-            <div class="footer_4">
-                <h4 id="contact">Meus contatos</h4>
-                <div>
-                    <p class="mail">isabelcris.dev@gmail.com</p>
-                </div>
-                <ul class="footer_social">
-                    <li><a href= "https://github.com/Isa-Cris24" target="_blank"> <i class="fa-brands fa-github"></i> </a></li>
-                    <li><a href= "https://www.instagram.com/isabel_cristina_i/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a></li>
-                    <li><a href= "https://www.linkedin.com/in/isabel-cristina-12018b15b/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a></li>
-                </ul>
-            </div>
+          </article>
         </div>
-        <div class="footer_copyright">
-            <small>Copyright &copy; desenvolvedor Isabel Cristina</small>
+      </div>
+    </section>
+
+    <section class="section container" id="projetos">
+      <div class="section-heading">
+        <p class="eyebrow">TRABALHOS SELECIONADOS</p>
+        <h2>Projetos em <span>destaque</span></h2>
+        <p class="section-intro">Projetos práticos e iniciativas que representam meu aprendizado e minha experiência.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-art art-api"><div class="art-window"><span></span><span></span><span></span><code>API.create( )<br>loan · client · payment</code></div><i class="fa-solid fa-server art-symbol"></i></div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-type">BACK-END • PYTHON</span><span class="tag tag-live">MVP em evolução</span></div>
+            <h3>Sistema de Empréstimos</h3>
+            <p>API para organizar o controle de clientes, empréstimos, parcelas e pagamentos, com regras de negócio e relatórios financeiros básicos.</p>
+            <div class="tech-list"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>Pydantic</span></div>
+            <a class="project-link" href="https://github.com/Isa-Cris24/sistema-emprestimo-fastapi" target="_blank" rel="noopener noreferrer">Ver repositório <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-art art-mobile"><div class="phone-mock"><div class="phone-speaker"></div><div class="phone-screen"><i class="fa-solid fa-scissors"></i><b>Barber Shop</b><small>Agende seu horário</small><span class="phone-slot">09:00　10:30</span><span class="phone-slot">13:00　14:30</span></div></div><i class="fa-brands fa-android art-symbol"></i></div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-type">APLICATIVO • MOBILE</span><span class="tag">Em evolução</span></div>
+            <h3>Barber Shop — Agendamento</h3>
+            <p>Aplicativo de agendamento para barbearia. O MVP foi concluído e o projeto continua em desenvolvimento.</p>
+            <div class="tech-list"><span>Aplicativo mobile</span><span>Kotlin*</span><span>Agendamento</span></div>
+            <p class="project-note">*Tecnologia indicada pelo material de demonstração já presente no portfólio.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-art art-access"><div class="braille-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><i class="fa-solid fa-universal-access art-symbol"></i></div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-type">EDUCAÇÃO • ACESSIBILIDADE</span><span class="tag">Experiência prática</span></div>
+            <h3>Materiais didáticos acessíveis</h3>
+            <p>Adaptação de conteúdos de Matemática e Ciências para Braille, com atenção à clareza das descrições, fórmulas e representações visuais.</p>
+            <div class="tech-list"><span>Braille</span><span>Acessibilidade</span><span>Matemática</span><span>Adaptação de conteúdo</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="projects-footnote">Os projetos são apresentados conforme seu estágio atual. Novas demonstrações e repositórios serão adicionados à medida que forem disponibilizados.</p>
+    </section>
+
+    <section class="section section-muted" id="habilidades">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CAIXA DE FERRAMENTAS</p>
+          <h2>Conhecimentos e <span>habilidades</span></h2>
+          <p class="section-intro">Tecnologias e ferramentas com as quais venho estudando e trabalhando.</p>
         </div>
-    </footer>
+        <div class="skills-grid">
+          <article class="skill-group"><div class="skill-icon"><i class="fa-solid fa-code"></i></div><h3>Desenvolvimento</h3><div class="skill-chips"><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>FastAPI</span></div></article>
+          <article class="skill-group"><div class="skill-icon"><i class="fa-solid fa-database"></i></div><h3>Dados e banco de dados</h3><div class="skill-chips"><span>SQL</span><span>PostgreSQL</span><span>Excel</span><span>Power BI</span></div></article>
+          <article class="skill-group"><div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div><h3>Competências</h3><div class="skill-chips"><span>Resolução de problemas</span><span>Organização</span><span>Comunicação</span><span>Aprendizado contínuo</span><span>Adaptação de conteúdos</span></div></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section container" id="formacao">
+      <div class="section-heading">
+        <p class="eyebrow">APRENDIZADO CONTÍNUO</p>
+        <h2>Formação e <span>certificações</span></h2>
+      </div>
+      <div class="education-card">
+        <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div><span class="education-label">GRADUAÇÃO • EM ANDAMENTO</span><h3>Ciência da Computação</h3><p>Estácio de Sá · Início em 2023</p></div>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card"><i class="fa-solid fa-globe"></i><div><h3>Programação para Internet</h3><p>Certificado — Estácio</p></div></article>
+        <article class="cert-card"><i class="fa-solid fa-chart-line"></i><div><h3>Análise de Dados para Tomada de Decisão</h3><p>Certificado — Estácio</p></div></article>
+        <article class="cert-card"><i class="fa-brands fa-python"></i><div><h3>Desenvolvimento Rápido de Aplicações em Python para Cloud, IoT e Big Data</h3><p>Certificado — Estácio</p></div></article>
+      </div>
+    </section>
 
+    <section class="contact-section" id="contato">
+      <div class="container contact-inner">
+        <div><p class="eyebrow">VAMOS CONVERSAR?</p><h2>Tem uma oportunidade ou ideia?</h2><p>Estou aberta a trocar experiências, aprender e conhecer novos desafios na área de tecnologia.</p></div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:Isabelcris.dev@gmail.com">Enviar e-mail <i class="fa-regular fa-paper-plane"></i></a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/isabel-cristina-12018b15b/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-   
-    <script src="js/script.js"></script>
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand" href="#inicio">isabel<span>.</span></a><p>Feito com curiosidade e vontade de aprender.</p><span>© <span id="year">2026</span> Isabel Cristina</span></div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
