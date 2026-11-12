@@ -153,3 +153,5 @@ button{font:inherit}
 .project-details strong{font-size:.78rem;color:#e8defa}
 .project-details ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:.78rem}
 .project-details li{margin:4px 0}
+
+.additional-info{max-width:780px;margin:18px auto 0;color:var(--muted);font-size:.85rem;text-align:center}
