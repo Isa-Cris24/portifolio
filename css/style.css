@@ -147,3 +147,9 @@ button{font:inherit}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
 .contact-phone{margin-top:10px;color:var(--lilac)!important;font-weight:600}
+
+.contact-phone{margin-top:10px;color:var(--lilac)!important;font-weight:600}
+.project-details{margin:18px 0 12px;padding:14px 16px;border:1px solid rgba(167,139,250,.17);background:rgba(167,139,250,.055);border-radius:9px}
+.project-details strong{font-size:.78rem;color:#e8defa}
+.project-details ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:.78rem}
+.project-details li{margin:4px 0}
