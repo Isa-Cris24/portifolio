@@ -1,54 +1,57 @@
-// Typing Script JS
-var typed = new Typed(".typing",{
-    strings: ["Desenvolvedora FullStack", "Desenvolvedor FullStack"],
-    typeSpeed: 80,
-    backSpeed: 80,
-});
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-var typed = new Typed(".typing-2",{
-    strings: ["Desenvolvedora FullStack", "Desenvolvedor FullStack"],
-    typeSpeed: 100,
-    backSpeed: 60,
-});
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+    menuToggle.innerHTML = isOpen
+      ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>'
+      : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+  });
 
-// Show/Hide FAQs answer
-const faqs = document.querySelectorAll('.faq');
-faqs.forEach(faq => {
-    faq.addEventListener('click', () => {
-        faq.classList.toggle('open');
-
-        //change icon
-        const icon = faq.querySelector('.faq_icon i');
-        if (icon.className === 'fa-solid fa-plus'){
-            icon.className = 'fa-solid fa-minus';
-        }
-        else{
-            icon.className = 'fa-solid fa-plus';
-        }
-
-    })
-})
-
-//Show/hide nav menu
-const menu = document.querySelector('.nav_menu');
-const menuBtn = document.querySelector('#open-menu-btn');
-const closeBtn = document.querySelector('#close-menu-btn');
-
-menuBtn.addEventListener('click', () => {
-    menu.style.display = "flex";
-    closeBtn.style.display = "inline-block";
-    menuBtn.style.display = "none";
-})
-
-//close nav menu
-const closeNav = () => {
-    menu.style.display = "none";
-    closeBtn.style.display = "none";
-    menuBtn.style.display = "inline-block";
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Abrir menu');
+      menuToggle.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+    });
+  });
 }
-closeBtn.addEventListener('click', closeNav);
 
-//nav color change on scroll
-window.addEventListener('scroll', () => {
-    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY>100);
-}) 
+const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();
+
+const typingTarget = document.querySelector('.typing');
+const phrases = ['desenvolvimento de software', 'análise de dados', 'tecnologia assistiva'];
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (typingTarget && !reduceMotion) {
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function typePhrase() {
+    const phrase = phrases[phraseIndex];
+    typingTarget.textContent = phrase.slice(0, charIndex);
+
+    if (!deleting && charIndex < phrase.length) {
+      charIndex++;
+      setTimeout(typePhrase, 75);
+    } else if (!deleting) {
+      deleting = true;
+      setTimeout(typePhrase, 1500);
+    } else if (charIndex > 0) {
+      charIndex--;
+      setTimeout(typePhrase, 35);
+    } else {
+      deleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(typePhrase, 350);
+    }
+  }
+
+  typePhrase();
+}
